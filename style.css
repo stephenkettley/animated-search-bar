@@ -5,7 +5,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     user-select: none;
 }
 
@@ -21,6 +21,7 @@ body {
     border-radius: 50px;
     box-shadow: 6px 6px 10px rgba(0,0,0,0.2), -6px -6px 10px rgba(255,255,255,0.7);
     margin: 10px;
+    transition: width 1.5s ease;
 }
 
 .magnifier {
@@ -34,10 +35,12 @@ body {
     width: 30px;
     position: absolute;
     right: 10px;
+    transition: width 0.4s ease;
+    transition-delay: 1s;
 }
 
 .input {
-    width: 385px;
+    width: 100%;
     border-radius: 5px;
     border: none;
     background-color: transparent;
@@ -45,11 +48,10 @@ body {
     outline: none;
     font-size: 16px;
     color: rgb(0, 0, 0);
+    transition-delay: 0.5s;
+    transition: width 1s ease;
 }
 
-.search-bar-container:hover {
-    background-color: #ffffff;
-}
 
 .active.search-bar-container{
     width: 50px;
